@@ -59,13 +59,13 @@ function App() {
       <header>
         <h1 className="text-3xl font-bold text-center pb-6">Sample App</h1>
         <div className="flex gap-6 pb-2">
-          <h1>Select an Aggregation Tag</h1>
+          <h1>Filter By Aggregation Tag</h1>
           <select
             value={selectedTag}
             onChange={handleChangeTag}
             className="dropdown"
           >
-            <option value="">-- Select a brand --</option>
+            <option value="">-- Select a Aggregation Tag --</option>
             {allTags.map((tag) => (
               <option key={tag} value={tag}>
                 {tag}
